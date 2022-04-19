@@ -1,0 +1,33 @@
+header{
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  border: solid 1px gray;
+  text-align: center;
+  background: pink;
+}
+
+
+.left-sidebar {
+  height: 700px;
+  width: 25%;
+  font-size: 20px;
+  border: solid 1px gray;
+  background-color: blue;
+}
+.f-container{
+  display:flex;
+  border: solid 1px gray;
+  
+}
+.right-sidebar{
+  
+  height: 700px;
+  width: 30%;
+  background-color:rgb(33, 232, 18);
+  border: solid 1px gray;
+}
+
+/*body {
+  background-color:green;
+}
