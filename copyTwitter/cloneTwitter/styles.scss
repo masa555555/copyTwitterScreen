@@ -1,8 +1,9 @@
+$changeColor: red;
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,12 +12,8 @@ body {
 }
 
 .sidebarOption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -35,7 +32,6 @@ body {
   background-color: var(--twitter-background);
   border-radius: 30px;
   color: var(--twitter-color);
-  -webkit-transition: color 100ms ease-out;
   transition: color 100ms ease-out;
 }
 
@@ -52,15 +48,12 @@ body {
   border-radius: 30px;
   height: 50px;
   margin-top: 20px;
-}
 
-.sidebar__tweet:hover {
-  background: red;
+  &:hover{ background: $changeColor;
+  }
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
   max-width: 1300px;
@@ -71,9 +64,8 @@ body {
 
 .sidebar {
   border-right: 1px solid var(--twitter-background);
-  -webkit-box-flex: 0.2;
-      -ms-flex: 0.2;
-          flex: 0.2;
+  flex: 0.2;
+
   min-width: 250px;
   margin-top: 20px;
   padding-left: 20px;
@@ -87,18 +79,13 @@ body {
 
 /* feed */
 .feed {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  flex: 0.5;
   border-right: 1px solid var(--twitter-background);
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   overflow-y: scroll;
 }
 
 .feed__header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
@@ -134,26 +121,17 @@ body {
 }
 
 .tweetBox form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .tweetbox__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 20px;
 }
 
 .tweetbox__input input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
@@ -165,15 +143,14 @@ body {
   border: none;
   color: white;
   font-weight: 900;
+
   border-radius: 30px;
   width: 80px;
   height: 40px;
   margin-top: 20px;
   margin-left: auto;
-}
-
-.tweetBox__tweetButton:hover {
-  background: red;
+  &:hover{ background: $changeColor;
+  }
 }
 
 /* post */
@@ -183,30 +160,21 @@ body {
 }
 
 .post {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   border-bottom: 1px solid var(--twitter-background);
   padding-bottom: 10px;
 }
 
 .post__body img {
   width: 450px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 20px;
 }
 
 .post__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
@@ -233,9 +201,7 @@ body {
 }
 
 .post__body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 10px;
 }
 
@@ -245,18 +211,12 @@ body {
 
 /* widgets */
 .widgets {
-  -webkit-box-flex: 0.3;
-      -ms-flex: 0.3;
-          flex: 0.3;
+  flex: 0.3;
 }
 
 .widgets__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: var(--twitter-background);
   padding: 10px;
   border-radius: 20px;
@@ -285,4 +245,6 @@ body {
   font-size: 18px;
   font-weight: 800;
 }
-/*# sourceMappingURL=styles.css.map */
+
+
+  
